@@ -18,6 +18,7 @@ class StatusFilter extends StatelessWidget {
         spacing: 8,
         children: [
           _buildFilterChip('all', 'All'),
+          _buildFilterChip('created', 'Created'),
           _buildFilterChip('sent', 'Sent'),
           _buildFilterChip('filled', 'Filled'),
           _buildFilterChip('controlled', 'Controlled'),

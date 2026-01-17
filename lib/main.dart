@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:keep_in_touch/providers/auth_provider.dart';
 import 'package:keep_in_touch/providers/animal_provider.dart';
 import 'package:keep_in_touch/providers/form_provider.dart';
+import 'package:keep_in_touch/providers/user_provider.dart';
 import 'package:keep_in_touch/screens/home_screen.dart';
 import 'package:keep_in_touch/screens/login_screen.dart';
 import 'package:keep_in_touch/screens/animal_detail_screen.dart';
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => AuthProvider()),
         ChangeNotifierProvider(create: (_) => AnimalProvider()),
         ChangeNotifierProvider(create: (_) => FormProvider()),
+        ChangeNotifierProvider(create: (_) => UserProvider()),
       ],
       child: const AppContent(),
     );

@@ -31,6 +31,10 @@ class AnimalService {
 
   List<Animal> filterAnimals(List<Animal> animals, String filter) {
     switch (filter) {
+      case 'created':
+        return animals
+            .where((animal) => animal.formStatus.toLowerCase() == 'created')
+            .toList();
       case 'sent':
         return animals
             .where((animal) => animal.formStatus.toLowerCase() == 'sent')
